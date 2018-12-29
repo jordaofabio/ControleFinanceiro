@@ -1,0 +1,30 @@
+CREATE TABLE `controlep`.`entradas` (
+  `id_entrada` int(6) unsigned NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `titulo` varchar(100) NOT NULL,
+  `valor` decimal(10,0) NOT NULL,
+  `mensal` tinyint(1) DEFAULT NULL,
+  `data` date DEFAULT NULL,
+  `reg_date` timestamp NULL DEFAULT NULL
+  );
+
+
+CREATE TABLE `controlep`.`contas` (
+id_conta INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+titulo VARCHAR(100) NOT NULL,
+valor decimal NOT NULL,
+vencimento date not null,
+reg_date timestamp NULL DEFAULT NULL
+);
+
+CREATE TABLE `controlep`.`compras` (
+id_compra INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+titulo VARCHAR(100) NOT NULL,
+valor decimal NOT NULL,
+vencimento date not null,
+reg_date timestamp NULL DEFAULT NULL
+);
+
+CREATE TABLE `controlep`.`categorias` (
+id_categoria INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+nomeCategoria VARCHAR(100) NOT NULL
+);
