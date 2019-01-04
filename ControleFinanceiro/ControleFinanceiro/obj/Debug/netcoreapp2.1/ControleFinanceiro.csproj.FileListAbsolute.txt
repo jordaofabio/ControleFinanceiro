@@ -1,0 +1,11 @@
+C:\Users\fjordao\Documents\Estudos\ControleFinanceiro\ControleFinanceiro\ControleFinanceiro\bin\Debug\netcoreapp2.1\ControleFinanceiro.deps.json
+C:\Users\fjordao\Documents\Estudos\ControleFinanceiro\ControleFinanceiro\ControleFinanceiro\bin\Debug\netcoreapp2.1\ControleFinanceiro.runtimeconfig.json
+C:\Users\fjordao\Documents\Estudos\ControleFinanceiro\ControleFinanceiro\ControleFinanceiro\bin\Debug\netcoreapp2.1\ControleFinanceiro.runtimeconfig.dev.json
+C:\Users\fjordao\Documents\Estudos\ControleFinanceiro\ControleFinanceiro\ControleFinanceiro\bin\Debug\netcoreapp2.1\ControleFinanceiro.dll
+C:\Users\fjordao\Documents\Estudos\ControleFinanceiro\ControleFinanceiro\ControleFinanceiro\obj\Debug\netcoreapp2.1\ControleFinanceiro.csprojAssemblyReference.cache
+C:\Users\fjordao\Documents\Estudos\ControleFinanceiro\ControleFinanceiro\ControleFinanceiro\obj\Debug\netcoreapp2.1\ControleFinanceiro.csproj.CoreCompileInputs.cache
+C:\Users\fjordao\Documents\Estudos\ControleFinanceiro\ControleFinanceiro\ControleFinanceiro\obj\Debug\netcoreapp2.1\ControleFinanceiro.RazorAssemblyInfo.cache
+C:\Users\fjordao\Documents\Estudos\ControleFinanceiro\ControleFinanceiro\ControleFinanceiro\obj\Debug\netcoreapp2.1\ControleFinanceiro.RazorAssemblyInfo.cs
+C:\Users\fjordao\Documents\Estudos\ControleFinanceiro\ControleFinanceiro\ControleFinanceiro\obj\Debug\netcoreapp2.1\ControleFinanceiro.AssemblyInfoInputs.cache
+C:\Users\fjordao\Documents\Estudos\ControleFinanceiro\ControleFinanceiro\ControleFinanceiro\obj\Debug\netcoreapp2.1\ControleFinanceiro.AssemblyInfo.cs
+C:\Users\fjordao\Documents\Estudos\ControleFinanceiro\ControleFinanceiro\ControleFinanceiro\obj\Debug\netcoreapp2.1\ControleFinanceiro.RazorTargetAssemblyInfo.cache
