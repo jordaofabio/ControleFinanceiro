@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "ControleFinanceiroDB": "Server=localhost;Database=controlep;Uid=root;Pwd=12345;"
+  }
+}
