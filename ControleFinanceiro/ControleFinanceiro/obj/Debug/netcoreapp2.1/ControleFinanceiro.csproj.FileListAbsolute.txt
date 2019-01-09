@@ -9,3 +9,6 @@ C:\Users\fjordao\Documents\Estudos\ControleFinanceiro\ControleFinanceiro\Control
 C:\Users\fjordao\Documents\Estudos\ControleFinanceiro\ControleFinanceiro\ControleFinanceiro\obj\Debug\netcoreapp2.1\ControleFinanceiro.AssemblyInfoInputs.cache
 C:\Users\fjordao\Documents\Estudos\ControleFinanceiro\ControleFinanceiro\ControleFinanceiro\obj\Debug\netcoreapp2.1\ControleFinanceiro.AssemblyInfo.cs
 C:\Users\fjordao\Documents\Estudos\ControleFinanceiro\ControleFinanceiro\ControleFinanceiro\obj\Debug\netcoreapp2.1\ControleFinanceiro.RazorTargetAssemblyInfo.cache
+C:\Users\fjordao\Documents\Estudos\ControleFinanceiro\ControleFinanceiro\ControleFinanceiro\bin\Debug\netcoreapp2.1\ControleFinanceiro.pdb
+C:\Users\fjordao\Documents\Estudos\ControleFinanceiro\ControleFinanceiro\ControleFinanceiro\obj\Debug\netcoreapp2.1\ControleFinanceiro.dll
+C:\Users\fjordao\Documents\Estudos\ControleFinanceiro\ControleFinanceiro\ControleFinanceiro\obj\Debug\netcoreapp2.1\ControleFinanceiro.pdb

@@ -28,3 +28,17 @@ CREATE TABLE `controlep`.`categorias` (
 id_categoria INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 nomeCategoria VARCHAR(100) NOT NULL
 );
+
+INSERT INTO `controlep`.`entradas`
+(
+`titulo`,
+`valor`,
+`mensal`,
+`data`,
+`reg_date`)
+VALUES
+('Teste',
+100,
+true,
+'2019-01-01 10:00:00',
+'2019-01-01 10:00:00');

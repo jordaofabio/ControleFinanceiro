@@ -28,12 +28,12 @@ namespace ControleFinanceiro
             _configuration = builder.Build();
         }
 
-
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             var sqlConnction = _configuration.GetConnectionString("ControleFinanceiroDB");
             services.AddDbContext<ContrFinDBContext>(options => options.UseMySql(sqlConnction));
+            services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,6 +41,8 @@ namespace ControleFinanceiro
         {
             if (env.IsDevelopment())
             {
+                app.UseStaticFiles();
+                app.UseMvcWithDefaultRoute();
                 app.UseDeveloperExceptionPage();
             }
             else

@@ -4,10 +4,16 @@ using System;
 
 namespace ControleFinanceiro
 {
-    internal class ContrFinDBContext : DbContext
+    public class ContrFinDBContext : DbContext
     {
+
+        public ContrFinDBContext(DbContextOptions<ContrFinDBContext> options)
+            : base(options)
+        {
+        }
         public DbSet<Entradas> Entradas { get; set; }
+
     }
 
-    
+
 }
