@@ -12,18 +12,33 @@ namespace ControleFinanceiro.Controllers
     public class EntradaController : Controller
     {
         // GET: api/<controller>
-        [HttpGet]
-        public IEnumerable<string> Get()
+        [HttpGet("{qtdParcelas}")]
+        public string Get(int qtdParcelas)
         {
-            return new string[] { "value1", "value2" };
+            int mesAtual = DateTime.Today.Month;
+            int anoAtual = DateTime.Today.Year;
+
+            int mesPrimeiraParcela = mesAtual + 1;
+            int anoPrimeiraParcela = anoAtual;
+            int mesUltimaParcela = (mesPrimeiraParcela + qtdParcelas) > 12 ? (mesPrimeiraParcela + qtdParcelas) - 12 : mesPrimeiraParcela + qtdParcelas;
+            int anoUltimaParcela = qtdParcelas + mesPrimeiraParcela > 12 ? anoAtual + 1 : anoAtual;
+
+
+            while (mesUltimaParcela > 12)
+            {
+                mesUltimaParcela = mesUltimaParcela - 12;
+                anoUltimaParcela++;
+            }
+
+            return string.Format("Parcelas de {0}/{1} até {2}/{3} ", mesPrimeiraParcela, anoPrimeiraParcela, mesUltimaParcela, anoUltimaParcela);
         }
 
         // GET api/<controller>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
+        //[HttpGet("{id}")]
+        //public string Get(int id)
+        //{
+        //    return "value";
+        //}
 
         // POST api/<controller>
         [HttpPost]
