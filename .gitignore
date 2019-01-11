@@ -1,3 +1,7 @@
-ControleFinanceiro/ControleFinanceiro/bin/Debug/*
+Debug/
 *.pdb
-.suo
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
