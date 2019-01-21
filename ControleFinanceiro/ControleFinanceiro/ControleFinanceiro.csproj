@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Views\Entrada\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using ControleFinanceiro.Entities;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -11,7 +12,14 @@ namespace ControleFinanceiro.Controllers
     [Route("api/[controller]")]
     public class EntradaController : Controller
     {
-        // GET: api/<controller>
+        private IEntradasRepository _EntradasRepository;
+
+        public EntradaController(IEntradasRepository entradasRepository)
+        {
+            _EntradasRepository = entradasRepository;
+        }
+
+        // GET: api/<controller>12
         [HttpGet("{qtdParcelas}")]
         public string Get(int qtdParcelas)
         {
@@ -33,12 +41,12 @@ namespace ControleFinanceiro.Controllers
             return string.Format("Parcelas de {0}/{1} até {2}/{3} ", mesPrimeiraParcela, anoPrimeiraParcela, mesUltimaParcela, anoUltimaParcela);
         }
 
-        // GET api/<controller>/5
-        //[HttpGet("{id}")]
-        //public string Get(int id)
-        //{
-        //    return "value";
-        //}
+        //GET api/<controller>
+        [HttpGet]
+        public List<Entradas> Get()
+        {
+            return _EntradasRepository.ListaEntradas();
+        }
 
         // POST api/<controller>
         [HttpPost]

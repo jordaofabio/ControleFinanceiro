@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ControleFinanceiro.Entities;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -34,15 +35,17 @@ namespace ControleFinanceiro
             var sqlConnction = _configuration.GetConnectionString("ControleFinanceiroDB");
             services.AddDbContext<ContrFinDBContext>(options => options.UseMySql(sqlConnction));
             services.AddMvc();
+            services.AddScoped<IEntradasRepository, EntradasRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            app.UseMvcWithDefaultRoute();
+            app.UseStaticFiles();
+
             if (env.IsDevelopment())
             {
-                app.UseStaticFiles();
-                app.UseMvcWithDefaultRoute();
                 app.UseDeveloperExceptionPage();
             }
             else
