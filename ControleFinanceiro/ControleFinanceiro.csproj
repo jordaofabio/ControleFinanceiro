@@ -2,17 +2,86 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TypeScriptToolsVersion>3.1</TypeScriptToolsVersion>
+    <TypeScriptCompileBlock>true</TypeScriptCompileBlock>
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Client\app\ListaExemplo\" />
     <Folder Include="Views\Entrada\" />
-    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Client\app\app-routing.module.ts" />
+    <None Include="wwwroot\Client\app\app.component.html" />
+    <None Include="wwwroot\Client\app\app.component.scss" />
+    <None Include="wwwroot\Client\app\app.component.spec.ts" />
+    <None Include="wwwroot\Client\app\app.component.ts" />
+    <None Include="wwwroot\Client\app\app.module.ts" />
+    <None Include="wwwroot\Client\assets\.gitkeep" />
+    <None Include="wwwroot\Client\browserslist" />
+    <None Include="wwwroot\Client\dist\out-tsc\app\app-routing.module.js" />
+    <None Include="wwwroot\Client\dist\out-tsc\app\app-routing.module.js.map" />
+    <None Include="wwwroot\Client\dist\out-tsc\app\app.component.js" />
+    <None Include="wwwroot\Client\dist\out-tsc\app\app.component.js.map" />
+    <None Include="wwwroot\Client\dist\out-tsc\app\app.component.spec.js" />
+    <None Include="wwwroot\Client\dist\out-tsc\app\app.component.spec.js.map" />
+    <None Include="wwwroot\Client\dist\out-tsc\app\app.module.js" />
+    <None Include="wwwroot\Client\dist\out-tsc\app\app.module.js.map" />
+    <None Include="wwwroot\Client\dist\out-tsc\e2e\src\app.e2e-spec.js" />
+    <None Include="wwwroot\Client\dist\out-tsc\e2e\src\app.e2e-spec.js.map" />
+    <None Include="wwwroot\Client\dist\out-tsc\e2e\src\app.po.js" />
+    <None Include="wwwroot\Client\dist\out-tsc\e2e\src\app.po.js.map" />
+    <None Include="wwwroot\Client\dist\out-tsc\environments\environment.js" />
+    <None Include="wwwroot\Client\dist\out-tsc\environments\environment.js.map" />
+    <None Include="wwwroot\Client\dist\out-tsc\environments\environment.prod.js" />
+    <None Include="wwwroot\Client\dist\out-tsc\environments\environment.prod.js.map" />
+    <None Include="wwwroot\Client\dist\out-tsc\main.js" />
+    <None Include="wwwroot\Client\dist\out-tsc\main.js.map" />
+    <None Include="wwwroot\Client\dist\out-tsc\polyfills.js" />
+    <None Include="wwwroot\Client\dist\out-tsc\polyfills.js.map" />
+    <None Include="wwwroot\Client\dist\out-tsc\src\app\app-routing.module.js" />
+    <None Include="wwwroot\Client\dist\out-tsc\src\app\app-routing.module.js.map" />
+    <None Include="wwwroot\Client\dist\out-tsc\src\app\app.component.js" />
+    <None Include="wwwroot\Client\dist\out-tsc\src\app\app.component.js.map" />
+    <None Include="wwwroot\Client\dist\out-tsc\src\app\app.component.spec.js" />
+    <None Include="wwwroot\Client\dist\out-tsc\src\app\app.component.spec.js.map" />
+    <None Include="wwwroot\Client\dist\out-tsc\src\app\app.module.js" />
+    <None Include="wwwroot\Client\dist\out-tsc\src\app\app.module.js.map" />
+    <None Include="wwwroot\Client\dist\out-tsc\src\environments\environment.js" />
+    <None Include="wwwroot\Client\dist\out-tsc\src\environments\environment.js.map" />
+    <None Include="wwwroot\Client\dist\out-tsc\src\environments\environment.prod.js" />
+    <None Include="wwwroot\Client\dist\out-tsc\src\environments\environment.prod.js.map" />
+    <None Include="wwwroot\Client\dist\out-tsc\src\main.js" />
+    <None Include="wwwroot\Client\dist\out-tsc\src\main.js.map" />
+    <None Include="wwwroot\Client\dist\out-tsc\src\polyfills.js" />
+    <None Include="wwwroot\Client\dist\out-tsc\src\polyfills.js.map" />
+    <None Include="wwwroot\Client\dist\out-tsc\src\test.js" />
+    <None Include="wwwroot\Client\dist\out-tsc\src\test.js.map" />
+    <None Include="wwwroot\Client\dist\out-tsc\test.js" />
+    <None Include="wwwroot\Client\dist\out-tsc\test.js.map" />
+    <None Include="wwwroot\Client\environments\environment.prod.ts" />
+    <None Include="wwwroot\Client\environments\environment.ts" />
+    <None Include="wwwroot\Client\favicon.ico" />
+    <None Include="wwwroot\Client\index.html" />
+    <None Include="wwwroot\Client\karma.conf.js" />
+    <None Include="wwwroot\Client\main.ts" />
+    <None Include="wwwroot\Client\polyfills.ts" />
+    <None Include="wwwroot\Client\styles.scss" />
+    <None Include="wwwroot\Client\test.ts" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot\Client\tslint.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>
